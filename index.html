@@ -117,12 +117,28 @@
 	</section>
 	
 </body>
+</html>
 <script src="js/TweenMax.min.js"></script>
 <script src="js/TweenLite.min.js"></script>
 <script src="js/ScrollMagic.js"></script>
 <script src="js/animation.gsap.js"></script>
+<script src="js/createjs.min.js"></script>
 <script src="js/jquery.min.js"></script>
-
-
-	<script src="js/main.js"></script>
-</html>
+<script src="js/main.js"></script>
+<script>
+var queue = new createjs.LoadQueue(false);
+queue.loadFile("img/1.png")
+queue.loadFile("img/2.png")
+queue.loadFile("img/3.png")
+queue.loadFile("img/4.png")
+queue.loadFile("img/5.png")
+queue.loadFile("img/1-1.png")
+queue.loadFile("img/2-1.png")
+queue.loadFile("img/3-1.png")
+queue.loadFile("img/4-1.png")
+queue.loadFile("img/5-1.png")
+queue.loadFile("img/3per.png")
+queue.loadFile("img/bg.jpg")
+queue.on("complete",event =>{
+})
+</script>
